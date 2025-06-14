@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIWAS by MRPSS</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: #ffd700; /* Gold color */
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(to right, black, rgba(255, 215, 0, 0.3), black);
+    }
+
+    .header img {
+      height: 150px;
+      width: auto;
+      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .left-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    }
+
+    .about-section {
+      color: gold;
+      margin-bottom: 20px;
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .about-section h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+    }
+
+    .right-section {
+      flex: 2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .photo-card {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #ffd700;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .social-media-icons a img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s;
+      filter: brightness(0.8);
+    }
+
+    .social-media-icons a:hover img {
+      transform: scale(1.1);
+      filter: brightness(1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="niwas.png" alt="MRPSS Homes Title">
+  </header>
+
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <!-- Google Maps Embed -->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14460.81220721585!2d85.4275782!3d25.0271823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2efe59b1ad28f%3A0x7da23b0eb6c739a3!2zR0lSSUpBIE5JV0FTIOCkl-Ckv-CksOCkv-CknOCkviDgpKjgpL_gpLXgpL7gpLg!5e0!3m2!1sen!2sin!4v1729883708903!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-section">
+        <h2>About  GIRIJA NIWAS</h2>
+        <p>GIRIJA NIWAS a home ,a dream situated on the holy and historical land of Rajgir is a amulgamation of love ,affection , care and ofcourse of faith and holds the essence of this holy soil. It's each brick builds the pillars of belive and it's a home of kings ,not of land but of hearts. The nereby Kailash Ashram fills the air with sprituality and the mountains bounds it's sides and all above the members here makes it a statue of moral.</p>
+      </div> 
+    </div>
+
+    <!-- Right Section with Photos -->
+    <div class="right-section">
+      <div class="photo-card">
+        <img src="home1.jpeg" alt="Beautiful living room">
+      </div>
+      <div class="photo-card">
+        <img src="home2.jpeg" alt="Modern kitchen">
+      </div>
+      <div class="photo-card">
+        <img src="home3.jpeg" alt="Spacious bedroom">
+      </div>
+      <div class="photo-card">
+        <img src="home4.jpg" alt="Elegant bathroom">
+      </div>
+      <div class="photo-card">
+        <img src="home5.jpeg" alt="Beautiful garden">
+      </div>
+      <div class="photo-card">
+        <img src="home6.jpeg" alt="Stunning architecture">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Follow us on social media:</p>
+    <div class="social-media-icons">
+      <a href="https://www.facebook.com/mrpssindia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com/mrpssindia" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      <a href="https://youtube.com/@mrpssindia" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+    <p>&copy; 2024 MRPSS Pvt. Ltd. Rajgir. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

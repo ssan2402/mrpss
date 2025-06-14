@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MRPSS India</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="icon" href="favicon/favicon-32x32.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    .intro-banner {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: gold;
+      text-align: center;
+    }
+
+    .social-media-icons img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .testimonial {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .partner-logos img {
+      height: 40px;
+      margin: 0 10px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>MRPSS INDIA</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="intro-banner">
+      <div>
+        <h1>MRPSS INDIA</h1>
+        <h3><i>BUILDING A FUTURE YOU CAN TRUST</i></h3>
+      </div>
+    </section>
+
+    <section id="about">
+      <hgroup>
+        <h2>Who We Are</h2>
+        <h3>Committed to Excellence Across Sectors</h3>
+      </hgroup>
+      <p>MRPSS India is a diversified conglomerate offering services across real estate, finance, steel, telecom, and more. We are driven by innovation, customer trust, and national growth.</p>
+
+      <h3>Mission</h3>
+      <p>To build trustworthy, futuristic solutions across industries that improve lives and empower India.</p>
+
+      <h3>Vision</h3>
+      <p>To be India's most respected conglomerate recognized for delivering excellence in every sector we operate.</p>
+
+      <figure>
+        <img src="mrpssindia.png" alt="MRPSS Logo">
+        <figcaption><a href="intro.mp4" target="_blank">Watch Our Introduction Video</a></figcaption>
+      </figure>
+
+      <video controls muted>
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="services">
+      <hgroup>
+        <h2>Our Divisions</h2>
+        <h3>Powering Progress Across Industries</h3>
+      </hgroup>
+      <div class="grid">
+        <a href="mrpsshomes.html" class="contrast" target="_blank">Real Estate</a>
+        <a href="#" class="contrast">Finance & Banking</a>
+        <a href="#" class="contrast">Steel & Infrastructure</a>
+        <a href="#" class="contrast">Telecommunications</a>
+        <a href="#" class="contrast">Automobiles</a>
+        <a href="#" class="contrast">E-commerce & Gadgets</a>
+        <a href="#" class="contrast">CSR & NGOs</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What Our Clients Say</h2>
+      <article class="testimonial">
+        <p>"MRPSS transformed our housing dream into a reality with quality and integrity. Truly remarkable."</p>
+        <footer>— Ramesh Kumar, Patna</footer>
+      </article>
+      <article class="testimonial">
+        <p>"Professionalism and commitment shown by MRPSS in banking solutions are unmatched."</p>
+        <footer>— Meena Agarwal, Ranchi</footer>
+      </article>
+    </section>
+
+    <section>
+      <h2>Our Trusted Partners</h2>
+      <div class="partner-logos">
+        <img src="facebook.png" alt="Facebook">
+        <img src="twitter.png" alt="Twitter">
+        <img src="youtube.png" alt="YouTube">
+      </div>
+    </section>
+  </main>
+
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Connected</h2>
+          <h3>Get the latest updates from MRPSS</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" name="firstname" placeholder="Your Name" aria-label="First name" required>
+          <input type="email" name="email" placeholder="Email" aria-label="Email address" required>
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container">
+    <small>
+      <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+      &copy; 2024 MRPSS Pvt. Ltd. Rajgir
+    </small>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRPSS</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+/*      background: linear-gradient(135deg, #000000, #1e1e1e);*/
+      background-color:black;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .whole {
+      /* Removed the border */
+    }
+
+    .prompt-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+      z-index: 2;
+    }
+
+    .prompt {
+      background-color:gold;
+      padding: 20px;
+      width: 50%;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider-container {
+      position: fixed;
+      top: 0;
+      height: 677px;
+      width: 0;
+      overflow: hidden;
+      background-color:gold;
+      transition: width 2s ease-in-out;
+      z-index: 1;
+      border-top-right-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slider a {
+      text-decoration: none;
+      color: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: black;
+      transition: background-color 0.3s;
+      text-align: center;
+      font-size: 14px;
+      transition: transform 0.3s;
+    }
+
+    .slider a:hover {
+      background-color:palegoldenrod;
+      color: #282c34;
+      transform: scale(1.05);
+    }
+
+    .main-content {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      z-index: 0;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 60%;
+      margin: auto;
+    }
+
+    .join {
+      color: gold;
+      text-align: center;
+    }
+
+    .fade {
+      animation: fade 3s ease-in-out forwards;
+    }
+
+    .additional-content {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 20%;
+      height: 100%;
+      background-color: black;
+      overflow-y: auto;
+      padding: 20px;
+      display: none;
+    }
+
+     .promotional-banner,
+    .information-panel {
+      color: gold;
+      margin-bottom: 20px;
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-media-icons a img {
+      width: 25px;
+      height: 25px;
+      transition: transform 0.3s;
+    }
+
+    .social-media-icons a:hover:nth-child(1) img {
+      filter: hue-rotate(200deg);
+    }
+
+    .social-media-icons a:hover:nth-child(2) img {
+      filter: hue-rotate(120deg);
+    }
+
+    .social-media-icons a:hover:nth-child(3) img {
+      filter: hue-rotate(340deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="whole">
+
+    <div class="prompt-container" id="promptContainer">
+      <div class="prompt">
+        <h1 style="margin-bottom: 10px;">MRPSS INDIA</h1>
+        <p><h4><i>BUILDING A FUTURE YOU CAN TRUST</i></h4>.</p>
+      </div>
+    </div>
+
+    <div class="slider-container" id="sliderContainer">
+      <div class="slider">
+        <a href="mrpsshomes.html" class="home" target="_blank"> MRPSS HOMES</a>
+        <a href="2.html" class="services" target="_blank">MRPSS MOTORS</a>
+        <a href="2.html" class="mrpss-home" target="_blank">MRPSS STEELS</a>
+        <a href="2.html" class="mrpss-loan" target="_blank">MRPSS TELECOMS</a>
+        <a href="2.html" class="mrpss-steel" target="_blank">MRPSS BANKING</a>
+        <a href="2.html" class="mrpss-automobiles" target="_blank">MRPSS E-CART</a>
+        <a href="2.html" class="mrpss-groceries" target="_blank">MRPSS GADGETS</a>
+        <a href="2.html" class="mrpss-communications" target="_blank">MRPSS TRUSTS & NGO</a>
+        <div class="share-buttons"><br>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=mrpssindia.000webhostapp.com" target="_blank">Share on Facebook</a>
+          <a href="https://twitter.com/intent/tweet?url=mrpssindia.000webhostapp.com&text=Check out this awesome website!" target="_blank">Tweet</a>
+          <br><br><b><p>&copy; 2024 MRPSS Pvt. Ltd. Rajgir</p></br></p></b>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+      <div class="slideshow-container">
+        <img src="mrpssindia.png" alt="banner mrpss " width="724px" height="142px">
+        <div class="video-container">
+          <video width="724px" height="410px" muted>
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="social-media-icons">
+          <div class="join">
+            <pre class="join">BECOME A PART OF OUR FAMILY</pre>
+            <a href="https://www.facebook.com/mrpssindia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/mrpssindia" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com/@mrpssindia" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="additional-content" id="additionalContent">
+      <div class="promotional-banner" id="promotionalBanner1">
+        <h3>MAHADEV SHAMBHU</h3>
+        <img src="one1.jpg" height="200px" width="99%">
+      </div>
+      <div class="promotional-banner" id="promotionalBanner2">
+        <h2>A STEP AHEAD</h2>
+        <img src="one.jpg" height="300px" width="100%">
+      </div>
+      <div class="information-panel" id="informationPanel1">
+        <h4>-------------------------------</h4>
+        <p>ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्।</p>
+        <h5>---------------------------------------</h5>
+        <p>This mantra is chanted for good health, longevity, and liberation from the cycle of life and death.</p>
+      </div>
+      <div class="information-panel" id="informationPanel2">
+        <h2>--------------------------</h2>
+        <p>"Take risks: if you win, you will be happy; if you lose, you will be wise"</p>
+        <p>"The biggest risk is not taking any risk"</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      document.getElementById("promptContainer").style.display = "none";
+      document.getElementById("sliderContainer").style.width = "20%";
+      document.getElementById("mainContent").style.display = "flex";
+      document.getElementById("additionalContent").style.display = "block";
+      showPromotionalContent();
+      setTimeout(function () {
+        const video = document.querySelector("video");
+        if (video) {
+          video.play();
+        }
+      }, 5000);
+    }, 3000);
+
+    let slideIndex = 0;
+    let promoIndex = 0;
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("fade");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+
+    function showPromotionalContent() {
+      const banners = document.querySelectorAll(".promotional-banner");
+      const panels = document.querySelectorAll(".information-panel");
+
+      banners.forEach(banner => banner.style.display = "none");
+      panels.forEach(panel => panel.style.display = "none");
+
+      banners[promoIndex % banners.length].style.display = "block";
+      panels[promoIndex % panels.length].style.display = "block";
+
+      promoIndex++;
+      setTimeout(showPromotionalContent, 5000);
+    }
+  </script>
+
+</body>
+
+</html>
